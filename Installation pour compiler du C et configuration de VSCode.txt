@@ -1,0 +1,24 @@
+-- Linux
+        - Installer gcc si il n'est pas déjà installer par défaut
+        - Debian/Ubuntu :
+        sudo apt install build-essential
+        
+        - Arch Linux
+        sudo pacman -S gcc
+
+-- Mac
+        - Ouvrir un terminal
+        - Installe le "command line toosl"
+        xcode-select --install
+        - Installer gcc :
+        brew install gcc
+
+-- Windows
+        - Installer MinGW (suivre la vidéo suivant) :
+        https://www.youtube.com/watch?v=y-i96kqT53A
+        
+        https://winlibs.com/
+
+        - Configurer VSCode :
+        https://www.youtube.com/watch?v=ckVHHjzMhR4
+
