@@ -22,3 +22,8 @@
         - Configurer VSCode :
         https://www.youtube.com/watch?v=ckVHHjzMhR4
 
+Méthode youssef windows : 
+
+https://www.youtube.com/watch?v=-KayVZq1a58
+
+https://sourceforge.net/projects/mingw/
