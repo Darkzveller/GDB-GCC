@@ -1,7 +1,7 @@
 # Compilateur et options
 # --------------------------
 CC = gcc                 # Le compilateur C à utiliser (ici GCC)
-CFLAGS = -Wall -MMD      # Options de compilation : -Wall active tous les avertissements
+CFLAGS = -Wall -MMD      # Options de compilation : -Wall active tous les avertissements, -MMD génère automatiquement un fichier .d pour les dépendances des fichiers .h
 LIBS = -lX11 -lm         # Bibliothèques à lier (ici X11 pour l'affichage graphique)
 LIBSDIR =                # Répertoires supplémentaires pour les bibliothèques (vide ici)
 
@@ -47,5 +47,7 @@ run: $(EXEC)             # La cible 'run' dépend de l'exécutable
 
 
 # Inclure automatiquement les fichiers de dépendances
+# Grâce à cette commande, Make sait quels fichiers .o dépendent des .h modifiés
+# et ne recompile que ceux qui sont réellement affectés
 -include $(DEP)
 
