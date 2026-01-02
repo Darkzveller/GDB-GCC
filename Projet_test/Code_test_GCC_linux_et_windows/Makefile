@@ -13,10 +13,10 @@ DEP = $(OBJ:.o=.d)       # Fichiers de dépendances générés automatiquement
 
 # Nom de l’exécutable selon l’OS et insertion des bibliotheque différentes
 ifeq ($(OS),Windows_NT)
-    EXEC = main.exe
+    EXEC = caca.exe
 	LIBS =
 else
-    EXEC = main.out
+    EXEC = pipi.out
 	LIBS = -lX11 -lm  
 
 endif
